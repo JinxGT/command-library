@@ -13,40 +13,28 @@ if (message.content.startsWith(prefix) && commandName == "kick") {
                 reason: `This person was kicked using a bot's moderation system. We are so sorry if this caused problems.`
     }).then(() => {
         const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#fb1309')
-		.setTitle('Kicked')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
-		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
+		.setColor('RANDOM')
+		.setTitle('KICKED')
 		.setDescription("That user was kicked!")
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
-		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
 		message.channel.send(exampleEmbed);
     })
 } else {
     const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#fb1309')
+		.setColor('RANDOM')
 		.setTitle('ERROR')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
-		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
-		.setDescription("Uknown user!")
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
+		.setDescription("Uknown User!")
 		.setTimestamp()
-		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
 		message.channel.send(exampleEmbed);
 }
     } else {
         const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#fb1309')
+		.setColor('RANDOM')
 		.setTitle('ERROR')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
-		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
 		.setDescription("Please mention a user!")
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
-		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
 		message.channel.send(exampleEmbed);
     }}})
